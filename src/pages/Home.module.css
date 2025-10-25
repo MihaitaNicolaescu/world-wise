@@ -11,9 +11,19 @@
 .content {
     display: flex;
     flex-direction: column;
-    position: relative;
     justify-content: center;
-    align-items: center;
     flex: 1;
-    padding: 1.5rem;
+    margin-top: -30%;
+    position: relative;
+    text-align: center;
+    color: #000;
+    padding-top: 10rem;
+}
+
+.homepage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(211, 211, 211, 0.4); /* light gray with 50% opacity */
+  z-index: 0;
 }
