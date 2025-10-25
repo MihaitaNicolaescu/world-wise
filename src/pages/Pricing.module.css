@@ -1,0 +1,110 @@
+.pricing {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	align-items: stretch;
+	/* use a neutral overlay similar to the homepage (light gray translucent) */
+	background: linear-gradient(190deg, rgba(14, 138, 160, 0.45), rgba(255, 255, 255, 0.95));
+	color: #000; /* default text color to black like homepage */
+}
+
+.hero {
+	max-width: 980px;
+	margin: 2.5rem auto 1rem;
+	text-align: center;
+	padding: 0 1rem;
+}
+
+.hero h1 {
+	margin: 0 0 0.5rem;
+	font-size: 2rem;
+}
+
+.hero p {
+	margin: 0;
+	color: #222;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.25rem;
+	max-width: 1100px;
+	margin: 1.5rem auto 3rem;
+	padding: 0 1rem;
+	width: 100%;
+}
+
+.card {
+	/* slightly translucent white so cards float above the neutral background */
+	background: rgba(255,255,255,0.92);
+	border: 1px solid rgba(230,230,230,0.9);
+	border-radius: 12px;
+	padding: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 6px 20px rgba(15,15,15,0.03);
+}
+
+.recommended {
+	border-color: #0056d6; /* slightly deeper blue for emphasis */
+	box-shadow: 0 10px 30px rgba(0,86,214,0.12);
+}
+
+.cardHeader h2 {
+	margin: 0 0 0.5rem;
+	font-size: 1.25rem;
+}
+
+.price {
+	display: flex;
+	align-items: baseline;
+	gap: 0.5rem;
+}
+
+.amount {
+	font-size: 1.75rem;
+	font-weight: 700;
+	color: #072b5f; /* dark navy accent to match CTA */
+}
+
+.billing {
+	color: #666;
+}
+
+.features {
+	margin: 1rem 0;
+	padding: 0;
+	list-style: none;
+	color: #333;
+}
+
+.features li {
+	padding: 0.35rem 0;
+	border-top: 1px dashed #f0f0f0;
+}
+
+.cardFooter {
+	margin-top: 0.75rem;
+}
+
+.cta {
+	display: inline-block;
+	padding: 0.6rem 1rem;
+	background: #007bff; /* primary CTA color kept */
+	color: #fff;
+	text-decoration: none;
+	border-radius: 8px;
+	font-weight: 600;
+	box-shadow: 0 8px 22px rgba(0,123,255,0.12);
+}
+
+@media (max-width: 900px) {
+	.cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+	.cards { grid-template-columns: 1fr; }
+	.hero h1 { font-size: 1.5rem; }
+}
