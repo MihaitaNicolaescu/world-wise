@@ -9,7 +9,7 @@ const TIERS = [
     price: '$0',
     billing: 'forever',
     features: ['Track up to 3 journeys', 'Basic analytics', 'Community support'],
-    cta: '/signup'
+    cta: '/login'
   },
   {
     id: 'pro',
@@ -18,7 +18,7 @@ const TIERS = [
     billing: 'mo',
     features: ['Unlimited journeys', 'Advanced analytics', 'Priority email support', 'Exportable reports'],
     recommended: true,
-    cta: '/signup'
+    cta: '/login'
   },
   {
     id: 'enterprise',

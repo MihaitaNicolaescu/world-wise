@@ -24,6 +24,6 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(211, 211, 211, 0.4); /* light gray with 50% opacity */
+  background-color: rgba(211, 211, 211, 0.4);
   z-index: 0;
 }

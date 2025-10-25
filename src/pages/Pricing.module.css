@@ -3,9 +3,8 @@
 	flex-direction: column;
 	min-height: 100vh;
 	align-items: stretch;
-	/* use a neutral overlay similar to the homepage (light gray translucent) */
 	background: linear-gradient(190deg, rgba(14, 138, 160, 0.45), rgba(255, 255, 255, 0.95));
-	color: #000; /* default text color to black like homepage */
+	color: #000; 
 }
 
 .hero {
@@ -36,7 +35,6 @@
 }
 
 .card {
-	/* slightly translucent white so cards float above the neutral background */
 	background: rgba(255,255,255,0.92);
 	border: 1px solid rgba(230,230,230,0.9);
 	border-radius: 12px;
@@ -48,7 +46,7 @@
 }
 
 .recommended {
-	border-color: #0056d6; /* slightly deeper blue for emphasis */
+	border-color: #0056d6;
 	box-shadow: 0 10px 30px rgba(0,86,214,0.12);
 }
 
@@ -66,7 +64,7 @@
 .amount {
 	font-size: 1.75rem;
 	font-weight: 700;
-	color: #072b5f; /* dark navy accent to match CTA */
+	color: #072b5f;
 }
 
 .billing {
@@ -92,7 +90,7 @@
 .cta {
 	display: inline-block;
 	padding: 0.6rem 1rem;
-	background: #007bff; /* primary CTA color kept */
+	background: #007bff;
 	color: #fff;
 	text-decoration: none;
 	border-radius: 8px;
